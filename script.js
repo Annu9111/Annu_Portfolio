@@ -49,3 +49,15 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+function showEmail() {
+  const email = "aksoni911190@gmail.com";
+
+  const emailText = document.getElementById("email");
+  emailText.innerText = email;
+  emailText.style.display = "block";
+
+  navigator.clipboard.writeText(email);
+
+  // alert("Email copied to clipboard!");
+}
