@@ -61,3 +61,19 @@ function showEmail() {
 
   // alert("Email copied to clipboard!");
 }
+
+const skillsSection = document.querySelector(".skills-section");
+
+window.addEventListener("scroll", () => {
+  const top = skillsSection.getBoundingClientRect().top;
+
+  if (top < window.innerHeight - 100) {
+    document.querySelectorAll(".progress").forEach(bar => {
+      bar.style.width = bar.classList.contains("html") ? "90%" :
+                        bar.classList.contains("css") ? "85%" :
+                        bar.classList.contains("js") ? "75%" :
+                        bar.classList.contains("python") ? "80%" :
+                        bar.classList.contains("dsa") ? "70%" : "0";
+    });
+  }
+});
