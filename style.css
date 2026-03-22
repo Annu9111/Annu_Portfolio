@@ -325,3 +325,54 @@ button:hover {
   color: #00ff88;
   font-weight: bold;
 }
+
+/* SKILLS SECTION */
+.skills-section {
+  text-align: center;
+}
+
+.skills-title {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+/* CONTAINER */
+.skills-container {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* EACH SKILL */
+.skill {
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.skill p {
+  margin-bottom: 5px;
+}
+
+/* BAR BACKGROUND */
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #1a1a1a;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* PROGRESS */
+.progress {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #00ff88, #00ccff);
+  border-radius: 10px;
+  transition: 1s;
+}
+
+/* SKILL LEVELS */
+.progress.html { width: 90%; }
+.progress.css { width: 85%; }
+.progress.js { width: 75%; }
+.progress.python { width: 80%; }
+.progress.dsa { width: 70%; }
