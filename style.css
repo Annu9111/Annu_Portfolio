@@ -113,18 +113,23 @@ nav {
   height: 90vh;
 }
 
+.typing{
+  margin-top: 20px;
+}
+
 .hero-text {
-  max-width: 500px;
+  max-width: 700px;
 }
 
 .hero span {
   color: #00ff88;
+  font-size: 4rem;
   text-shadow: 0 0 12px #00ff88;
 }
 
 /* BUTTON */
 button {
-  margin-top: 15px;
+  margin-top: 24px;
   padding: 12px 25px;
   border-radius: 25px;
   border: none;
