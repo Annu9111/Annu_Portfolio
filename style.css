@@ -376,6 +376,7 @@ button:hover {
   height: 40px;
   filter: grayscale(100%);
   transition: 0.3s;
+  filter: invert(1); 
   cursor: pointer;
 }
 
@@ -383,4 +384,11 @@ button:hover {
 .contact-icons img:hover {
   filter: grayscale(0%);
   transform: scale(1.2);
+}
+
+.contact-icons img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.2);
+  box-shadow: 0 0 15px #00ff88;
+  border-radius: 10px;
 }
