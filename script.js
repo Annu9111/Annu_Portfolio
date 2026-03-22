@@ -77,3 +77,15 @@ window.addEventListener("scroll", () => {
     });
   }
 });
+
+const elements = document.querySelectorAll(".fade-up");
+
+window.addEventListener("scroll", () => {
+  elements.forEach((el, index) => {
+    if (el.getBoundingClientRect().top < window.innerHeight - 100) {
+      setTimeout(() => {
+        el.classList.add("show");
+      }, index * 150); // delay effect
+    }
+  });
+});
