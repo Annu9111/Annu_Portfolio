@@ -356,3 +356,31 @@ button:hover {
     display: block;
   }
 }
+
+/* CONTACT ICONS */
+.contact-section {
+  text-align: center;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+/* ICON STYLE */
+.contact-icons img {
+  width: 40px;
+  height: 40px;
+  filter: grayscale(100%);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/* HOVER EFFECT */
+.contact-icons img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.2);
+}
