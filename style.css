@@ -376,3 +376,63 @@ button:hover {
 .skill-card:hover img {
   transform: scale(1.2);
 }
+
+/* PROJECT GRID (2 per row) */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 👈 2 per row */
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* CARD */
+.project-card {
+  background: #1a1a1a;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+/* IMAGE */
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* TITLE */
+.project-card h3 {
+  padding: 15px;
+}
+
+/* BUTTONS */
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+}
+
+.buttons a {
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  background: #00ff88;
+  color: black;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.buttons a:hover {
+  background: #00cc66;
+}
+
+/* HOVER EFFECT */
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px #00ff88;
+}
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr; /* 1 per row on mobile */
+  }
+}
