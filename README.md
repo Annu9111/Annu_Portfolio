@@ -46,4 +46,4 @@ It showcases my projects, skills, and contact information with a clean UI and sm
 
 ## 📸 Screenshots
 
-![Portfolio Screenshot](images/project1.png)
+![Portfolio Screenshot](images/project.png)
