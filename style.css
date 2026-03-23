@@ -294,3 +294,46 @@ button:hover {
   animation: glowPulse 2s infinite;
 }
 
+/* PARTICLES BACKGROUND */
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+/* CURSOR GLOW */
+.cursor {
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 77, 136, 0.6);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  transition: transform 0.1s ease;
+  box-shadow: 0 0 20px #ff4d88, 0 0 40px #ff4d88;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 60px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  color: #aaa;
+  font-size: 14px;
+}
+
+.footer span {
+  color: #ff4d88;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.footer span:hover {
+  text-shadow: 0 0 10px #ff4d88;
+}

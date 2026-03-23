@@ -89,3 +89,41 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+particlesJS("particles-js", {
+  particles: {
+    number: {
+      value: 60
+    },
+    size: {
+      value: 3
+    },
+    color: {
+      value: "#ff4d88"  // 💗 pink particles
+    },
+    line_linked: {
+      enable: true,
+      distance: 120,
+      color: "#ff4d88",
+      opacity: 0.4
+    },
+    move: {
+      speed: 2
+    }
+  },
+  interactivity: {
+    events: {
+      onhover: {
+        enable: true,
+        mode: "repulse"
+      }
+    }
+  }
+});
+
+const cursor = document.querySelector(".cursor");
+
+document.addEventListener("mousemove", (e) => {
+  cursor.style.left = e.clientX + "px";
+  cursor.style.top = e.clientY + "px";
+});
